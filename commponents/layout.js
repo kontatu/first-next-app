@@ -1,8 +1,9 @@
+import styles from "./layout.module.css"
 import Head from "next/head"
 
 export default function Layout({ children, pageTitle }) {
     return (
-        <div>
+        <div className={styles.container}>
             <Head>
                 <title>My blog | {pageTitle}</title>
             </Head>
